@@ -350,3 +350,67 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .big-space {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  padding-top: 80px;
+  margin-top: -10px;
+  background-color: #ecfcff;
+}
+@media (max-width: 500px) {
+  .home .big-space {
+    background-size: cover;
+  }
+}
+.home form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+  background: rgba(130, 130, 130, 0.3);
+  padding: 20px 22px;
+  border: 1px solid;
+  border-top-color: rgba(255, 255, 255, 0.4);
+  border-left-color: rgba(255, 255, 255, 0.4);
+  border-bottom-color: rgba(60, 60, 60, 0.4);
+  border-right-color: rgba(60, 60, 60, 0.4);
+}
+@media (max-width: 500px) {
+  .home form {
+    width: 100%;
+  }
+}
+.home form input,
+.home form button {
+  width: 450px;
+  border: 1px solid;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(60, 60, 60, 0.35);
+  border-top-color: rgba(60, 60, 60, 0.35);
+  border-left-color: rgba(80, 80, 80, 0.45);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  padding: 8px 24px 8px 10px;
+  letter-spacing: 0.075em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 19px;
+}
+@media (max-width: 500px) {
+  .home form input,
+  .home form button {
+    width: 100%;
+  }
+}
+.home form input:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@keyframes hover {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: green;
+  }
+}
