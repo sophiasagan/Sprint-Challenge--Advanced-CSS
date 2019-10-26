@@ -1,1 +1,33 @@
 // Navigation code here
+
+.nav-bar {
+    .flexbox-class(column, center, center);
+    .background();
+    padding: 0px 0px 20px 0px;
+    h1 {
+        font-size: 40px;
+        padding: 15px;
+        animation-name: flash;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    opacity: .97;
+
+    @keyframes flash {
+        0% {opacity: 1.0;}
+        50% {opacity: .5;}
+        100% {opacity: 1.0;}
+      }
+}
